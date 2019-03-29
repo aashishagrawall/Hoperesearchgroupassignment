@@ -18,7 +18,8 @@ APIs
 token will be received on you logged in;
  5. (/allUserPosts,GET)- It will fetch all user post ,Authorization headers should be passed along ex - Authorization :(Bearer token);
 token will be received on you logged in;
-6.  (/updateUserPhone,GET) - It will update user phone number userimage is not included in json file so i user phone ,Authorization headers should be passed along with value -Authorization :(Bearer token);
+6.  (/updateUserPhone,POST) - It will update user phone number userimage is not included in json file so i user phone,required fields ({"phone":"sassd"}); no strict checking is applied
+,Authorization headers should be passed along with value -Authorization :(Bearer token);
 token will be received on you logged in;
-7. cannot create signout beacause of stateless JWT ,User will automatically signout once token is expired, token expiry is set to 200s
+7. User will automatically signout once token is expired, token expiry is set to 200s
 
